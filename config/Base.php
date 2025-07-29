@@ -29,19 +29,7 @@ class Base extends Config
 
     public function setFinder(iterable $finder): ConfigInterface
     {
-        $finder->exclude('dev/tests/functional/generated')
-            ->exclude('dev/tests/functional/var')
-            ->exclude('dev/tests/functional/vendor')
-            ->exclude('dev/tests/integration/tmp')
-            ->exclude('dev/tests/integration/var')
-            ->exclude('lib/internal/Cm')
-            ->exclude('lib/internal/Credis')
-            ->exclude('lib/internal/Less')
-            ->exclude('lib/internal/LinLibertineFont')
-            ->exclude('pub/media')
-            ->exclude('pub/static')
-            ->exclude('setup/vendor')
-            ->exclude('var');
+        $finder->exclude('var');
 
         return parent::setFinder($finder);
     }
@@ -98,9 +86,7 @@ class Base extends Config
             'phpdoc_types_order' => [
                 'null_adjustment' => 'always_last',
             ],
-            // 'phpdoc_var_without_name' => false,
             'return_assignment' => true,
-            // 'single_line_comment_style' => false,
             'trim_array_spaces' => true,
             'whitespace_after_comma_in_array' => true,
             // v7
