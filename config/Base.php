@@ -37,7 +37,7 @@ class Base extends Config
     public function getRules(): array
     {
         $rules = [
-            '@PER-CS2.0' => true,
+            '@PER-CS3.0' => true,
             'include' => true,
             'no_empty_statement' => true,
             'no_leading_namespace_whitespace' => true,
