@@ -37,7 +37,7 @@ class Base extends Config
     public function getRules(): array
     {
         $rules = [
-            '@PER-CS3.0' => true,
+            '@PER-CS3x0' => true,
             'include' => true,
             'no_empty_statement' => true,
             'no_leading_namespace_whitespace' => true,
@@ -91,6 +91,8 @@ class Base extends Config
             'whitespace_after_comma_in_array' => true,
             // v7
             'type_declaration_spaces' => true,
+            // v8
+            'phpdoc_to_comment' => ['allow_before_return_statement' => true],
         ];
 
         if (null !== $this->header) {

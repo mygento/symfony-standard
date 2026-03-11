@@ -15,7 +15,7 @@
     "phpmd/phpmd": "^2.15.0",
     "friendsofphp/php-cs-fixer": "^3.84",
     "php-parallel-lint/php-parallel-lint": "^1.4.0",
-    "phpro/grumphp": "^2.14",
+    "phpro/grumphp": "^2.18",
     "phpstan/phpstan": "^2.1"
   },
   "autoload": {
