@@ -48,6 +48,7 @@ class Base extends Config
             'no_unused_imports' => true,
             'object_operator_without_whitespace' => true,
             'standardize_not_equals' => true,
+            'ordered_imports' => ['imports_order' => ['class', 'function', 'const'], 'sort_algorithm' => 'alpha'],
             // mygento
             'phpdoc_order' => true,
             'phpdoc_types' => true,
